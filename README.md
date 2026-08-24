@@ -4,20 +4,20 @@
 
 The **University Management System (UMS)** is a relational database project developed for the **Database Management Systems (2501IT05)** course.
 
-The project focuses on organizing university information using a structured database and clearly defined relationships between entities.
+The project organizes university information using a structured relational database with entities, attributes, primary keys, foreign keys, and relationships.
 
-## 🎯 Objectives
+## 🎯 Review-I Objectives
 
-- Design an **ER diagram** for the University Management System.
-- Identify the major entities and their attributes.
-- Define **Primary Keys (PK)** and **Foreign Keys (FK)**.
-- Prepare the **relational database schema**.
-- Implement the database using **MySQL**.
-- Maintain relationships and data consistency between tables.
+- Finalize the project title, objectives, and problem statement.
+- Identify six entities and their attributes.
+- Design the ER diagram and define relationships.
+- Prepare the relational database schema.
+- Define Primary Keys (PK) and Foreign Keys (FK).
+- Create and maintain the GitHub repository.
 
 ## 🗂️ Main Entities
 
-The project identifies six main entities:
+The project contains six main entities:
 
 1. **College**
 2. **Department**
@@ -28,79 +28,81 @@ The project identifies six main entities:
 
 ## 🔗 Key Relationships
 
-- A **College** has many **Departments**.
-- A **Department** has many **Students**.
-- A **Department** has many **Faculty** members.
-- A **Department** has many **Courses**.
+- One **College** has many **Departments**.
+- One **Department** has many **Students**.
+- One **Department** has many **Faculty** members.
+- One **Department** has many **Courses**.
 - **Students** and **Courses** have a many-to-many relationship through **Enrollment**.
-
-## 🗃️ Relational Schema
-
-The relational schema represents the database structure using tables, attributes, primary keys, foreign keys, and relationships.
-
-The main tables used in the project are:
-
-- `college`
-- `department`
-- `students`
-- `faculty`
-- `courses`
-- `enrollments`
 
 ## 🖼️ ER Diagram
 
-The ER diagram represents the six entities and their relationships in the University Management System.
+The ER diagram shows the six entities, their attributes, primary/foreign keys, and relationships.
 
-![ER Diagram](ER%20DIAGRAM.png)
+![ER Diagram](diagrams/ER_Diagram.png)
+
+## 🗃️ Relational Database
+
+The database is designed using related tables with primary and foreign key constraints. The main tables are:
+
+- `college`
+- `department`
+- `student`
+- `faculty`
+- `course`
+- `enrollment`
 
 ## 💻 MySQL Implementation
 
-The database was implemented using **MySQL**. SQL commands such as `CREATE TABLE`, `ALTER TABLE`, `DESCRIBE`, and `SHOW TABLES` were used to create and verify the database structure.
+The database is implemented using **MySQL** and the SQL script is provided in the `database` folder.
 
-The complete SQL script is available here:
-
-📄 **[University Management System — 6 Entities SQL](University_Management_System_6_Entities.sql)**
+👉 [Open the SQL Script](database/University_Management_System_6_Entities.sql)
 
 ## 📊 Project Presentation
 
-The project presentation contains the project introduction, problem statement, objectives, ER diagram, relational schema, database implementation, and conclusion.
+The Review-I presentation contains the project overview, objectives, entity descriptions, attributes, relationships, ER diagram, relational schema, key features, future enhancements, and team responsibilities.
 
-📑 **[View / Download Project PPT](DBMS-Lab-Project-PPT-Final%20(1).pptx)**
+👉 [Open the Review-I Presentation](presentation/DBMS_Review1_UMS.pptx)
 
-## 👥 Team Members
+## 👥 Team Members & Responsibilities
 
-| Roll No. | Team Member |
-|---|---|
-| 25B11DS045 | **B. Rohith** |
-| 25B11DS016 | **Ali Raza Hasan** |
-| 25B11DS286 | **K. Anand Sai** |
-| 25B11DS212 | **Vishnu Vardhan** |
-| 25B11DS314 | **K. Siva Lakshmi Rahul** |
-
-## 📁 Repository Contents
-
-```text
-university-management-system-dbms/
-│
-├── ER DIAGRAM.png
-├── DBMS-Lab-Project-PPT-Final (1).pptx
-├── University_Management_System_6_Entities.sql
-└── README.md
-```
+| Roll No. | Team Member | Responsibility |
+|---|---|---|
+| 25B11DS045 | **B. Rohith** | Database Design & College/Department Tables |
+| 25B11DS286 | **K. Anandh Sai** | ER Diagram, Documentation & Presentation |
+| 25B11DS331 | **M. Gowri Shankar** | Faculty & Course Management |
+| 25B11DS034 | **Ayush Kumar Singh** | Attendance & Grade Management |
+| 25B11DS211 | **K. Siva Lakshmi Rahul** | Student & Enrollment Management |
 
 ## 🛠️ Technologies Used
 
 - **MySQL** — Database implementation
 - **SQL** — Database definition and manipulation
 - **ER Modeling** — Database design
-- **GitHub** — Project repository and documentation
+- **GitHub** — Version control and project documentation
+
+## 📁 Repository Structure
+
+```text
+university-management-system-dbms/
+│
+├── README.md
+│
+├── database/
+│   └── University_Management_System_6_Entities.sql
+│
+├── diagrams/
+│   └── ER_Diagram.png
+│
+└── presentation/
+    └── DBMS_Review1_UMS.pptx
+```
 
 ## 🚀 Future Scope
 
-The database can be extended in future stages with features such as a web interface, user authentication, attendance management, performance tracking, reports, and data analytics.
+The system can be extended with a web interface, secure login and role-based access, student performance and attendance tracking, academic reports, data analytics, improved security, and scalability.
 
 ---
 
 ### 🎓 DBMS Capstone Project
-**University Management System**  
+**University Management System (UMS)**  
 *Design • Structure • Implement • Manage*
